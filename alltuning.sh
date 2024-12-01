@@ -21,7 +21,7 @@ python alltuning.py shape_out.log "$ROCM_BIN_PATH\/" -p $P_NUMBERS
 
 python merge_tuned.py
 export HIPBLASLT_TUNING_OVERRIDE_FILE=tuning.txt
-python aftertunning.py shape_out.log tuned.csv "$LAST_P_NUMBER_PARAM" "$ROCM_BIN_PATH\/"
+python aftertuning.py shape_out.log tuned.csv "$LAST_P_NUMBER_PARAM" "$ROCM_BIN_PATH\/"
 
 python compare_tuned.py
 python getftuning.py
