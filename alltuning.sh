@@ -26,3 +26,6 @@ python aftertuning.py shape_out.log tuned.csv "$LAST_P_NUMBER_PARAM" "$ROCM_BIN_
 python compare_tuned.py
 python getftuning.py
 
+
+python mnk_freq.py
+python update_comparison.py
